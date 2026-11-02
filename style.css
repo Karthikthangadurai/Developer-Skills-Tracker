@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.main-content{
+    background-color: rgba(0,0,0,0.70);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.20);
+}
+
+.heading{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.heading h1,p{
+    margin-top: 20px;
+}
+
+.heading button{
+     border: none;
+    background-color: rgb(72, 94, 221);
+    color: white;
+    padding: 12px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.heading button:hover{
+    background-color: rgb(170, 89, 245);
+    color: black;
+}
+
+
+.skill-controls{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.skill-controls button{
+    cursor: pointer;
+}
+
+
+input {
+    margin: 5px 0px;
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px whitesmoke;
+}
+
+input::placeholder{
+    color: lightgrey;
+}
+
+#skillForm button{
+    width: 100%;
+    margin: 15px 0px;
+    border: none;
+    background-color: rgb(10, 159, 15);
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#totalCount{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.subcontainer{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    color: rgb(138, 112, 244);
+    
+}
+
+.subcontainer__button{
+    background-color: transparent;
+    border: none;
+    color: rgb(29, 188, 29);
+    cursor: pointer;
+}
+
+.subcontainer__button:hover{
+    color: rgb(246, 8, 8);
+}
+
+
+/* Default Light Mode */
+
+body {
+    background-color: #f4f6fb;
+    transition: background-color 0.3s ease;
+}
+
+.main-content {
+    background-color: #ffffff;
+    color: #1f2937;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Text */
+
+.main-content .heading h1,
+.main-content .heading p,
+.main-content .skill-controls p,
+#totalCount {
+    color: #1f2937;
+}
+
+/* Light Mode Input */
+
+input {
+    background-color: #ffffff;
+    color: #1f2937;
+    border: 1px solid #cbd5e1;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #232324;
+}
+
+body.dark-mode .main-content {
+    background-color: #3f3f3f;
+    color: #ffffff;
+}
+
+/* Dark Mode Text */
+
+body.dark-mode .main-content .heading h1,
+body.dark-mode .main-content .heading p,
+body.dark-mode .main-content .skill-controls p,
+body.dark-mode #totalCount {
+    color: #ffffff;
+}
+
+/* Dark Mode Input */
+
+body.dark-mode input {
+    background-color: #555555;
+    color: #ffffff;
+    border: 1px solid #aaaaaa;
+}
+
